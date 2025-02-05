@@ -23,11 +23,7 @@ body {
     height: 100vh;
     background-image: url('img/photo-1585202900225-6d3ac20a6962.avif');
     background-size: 100% 100%;
-    
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-evenly; */
     padding-top:25vh;
     padding-bottom: 20vh;
 }
@@ -62,10 +58,6 @@ main {
     padding: 10%;
     font-weight: 700;
     height: 35%;
-    /* /* white-space: nowrap; */
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
 }
 
 .description p+p {
@@ -76,6 +68,8 @@ main {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 1rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.25);
+    height: 20rem;
 }
 
 form {
@@ -84,17 +78,24 @@ form {
     /* padding-left: 2rem;
     padding-right: 2rem; */
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form h3 {
-    display: block;
+form input {
+    width:15rem;
 }
 
 
+.form h3 {
+    font-size: 2rem;
+}
 
 form p+p {
     margin-top: 2rem;
+}
+
+form label {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .right {
@@ -116,4 +117,20 @@ label,input{
 
 .bottom {
     margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.bottom button {
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    background-color: #596D48;
+    color:white;
+}
+
+.bottom p {
+    margin-top: 1rem;
+}
+
+.bottom a {
+    color:#596D48   ;
 }
