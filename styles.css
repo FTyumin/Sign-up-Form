@@ -72,21 +72,20 @@ main {
     height: 20rem;
 }
 
+.form h3 {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
 form {
     margin-top: 1rem;
     display: flex;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
     padding: 1rem;
 }
 
 form input {
     width:15rem;
-}
-
-
-.form h3 {
-    font-size: 2rem;
+    border-radius: 4px;
 }
 
 form p+p {
@@ -133,4 +132,23 @@ label,input{
 
 .bottom a {
     color:#596D48   ;
+}
+
+/*Validation & input styling*/
+
+form input#password:invalid {
+    border:2px solid red;
+}
+
+form input#confirmPassword:invalid {
+    border:2px solid red;
+}
+
+form input{
+    appearance: none;
+    outline: none;
+}
+
+form input:focus {
+    border: 2px solid blue;
 }
